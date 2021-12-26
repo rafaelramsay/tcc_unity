@@ -1,0 +1,389 @@
+fileFormatVersion: 2
+guid: 453843e236ee491438642101f309fcd4
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Body
+    100002: Bottoms
+    100004: Eyelashes
+    100006: Eyes
+    100008: Eyewear
+    100010: Gloves
+    100012: Hats
+    100014: Masks
+    100016: mixamorig:Head
+    100018: mixamorig:HeadTop_End
+    100020: mixamorig:Hips
+    100022: mixamorig:LeftArm
+    100024: mixamorig:LeftFoot
+    100026: mixamorig:LeftForeArm
+    100028: mixamorig:LeftHand
+    100030: mixamorig:LeftHandIndex1
+    100032: mixamorig:LeftHandIndex2
+    100034: mixamorig:LeftHandIndex3
+    100036: mixamorig:LeftHandIndex4
+    100038: mixamorig:LeftLeg
+    100040: mixamorig:LeftShoulder
+    100042: mixamorig:LeftToe_End
+    100044: mixamorig:LeftToeBase
+    100046: mixamorig:LeftUpLeg
+    100048: mixamorig:Neck
+    100050: mixamorig:RightArm
+    100052: mixamorig:RightFoot
+    100054: mixamorig:RightForeArm
+    100056: mixamorig:RightHand
+    100058: mixamorig:RightHandIndex1
+    100060: mixamorig:RightHandIndex2
+    100062: mixamorig:RightHandIndex3
+    100064: mixamorig:RightHandIndex4
+    100066: mixamorig:RightLeg
+    100068: mixamorig:RightShoulder
+    100070: mixamorig:RightToe_End
+    100072: mixamorig:RightToeBase
+    100074: mixamorig:RightUpLeg
+    100076: mixamorig:Spine
+    100078: mixamorig:Spine1
+    100080: mixamorig:Spine2
+    100082: Moustaches
+    100084: //RootNode
+    100086: Shoes
+    100088: Tops
+    400000: Body
+    400002: Bottoms
+    400004: Eyelashes
+    400006: Eyes
+    400008: Eyewear
+    400010: Gloves
+    400012: Hats
+    400014: Masks
+    400016: mixamorig:Head
+    400018: mixamorig:HeadTop_End
+    400020: mixamorig:Hips
+    400022: mixamorig:LeftArm
+    400024: mixamorig:LeftFoot
+    400026: mixamorig:LeftForeArm
+    400028: mixamorig:LeftHand
+    400030: mixamorig:LeftHandIndex1
+    400032: mixamorig:LeftHandIndex2
+    400034: mixamorig:LeftHandIndex3
+    400036: mixamorig:LeftHandIndex4
+    400038: mixamorig:LeftLeg
+    400040: mixamorig:LeftShoulder
+    400042: mixamorig:LeftToe_End
+    400044: mixamorig:LeftToeBase
+    400046: mixamorig:LeftUpLeg
+    400048: mixamorig:Neck
+    400050: mixamorig:RightArm
+    400052: mixamorig:RightFoot
+    400054: mixamorig:RightForeArm
+    400056: mixamorig:RightHand
+    400058: mixamorig:RightHandIndex1
+    400060: mixamorig:RightHandIndex2
+    400062: mixamorig:RightHandIndex3
+    400064: mixamorig:RightHandIndex4
+    400066: mixamorig:RightLeg
+    400068: mixamorig:RightShoulder
+    400070: mixamorig:RightToe_End
+    400072: mixamorig:RightToeBase
+    400074: mixamorig:RightUpLeg
+    400076: mixamorig:Spine
+    400078: mixamorig:Spine1
+    400080: mixamorig:Spine2
+    400082: Moustaches
+    400084: //RootNode
+    400086: Shoes
+    400088: Tops
+    2100000: Bodymat
+    2100002: Maskmat
+    2100004: Eyewearmat
+    2100006: Topmat
+    2100008: Glovemat
+    2100010: Moustachemat
+    2100012: Bottommat
+    2100014: Hatmat
+    2100016: Shoesmat
+    4300000: Body
+    4300002: Eyes
+    4300004: Eyelashes
+    4300006: Masks
+    4300008: Eyewear
+    4300010: Tops
+    4300012: Gloves
+    4300014: Moustaches
+    4300016: Bottoms
+    4300018: Hats
+    4300020: Shoes
+    7400000: mixamo.com
+    9500000: //RootNode
+    13700000: Body
+    13700002: Bottoms
+    13700004: Eyelashes
+    13700006: Eyes
+    13700008: Eyewear
+    13700010: Gloves
+    13700012: Hats
+    13700014: Masks
+    13700016: Moustaches
+    13700018: Shoes
+    13700020: Tops
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Body_diffuse
+    second: {fileID: 2800000, guid: 4a4b7ffc1af228949ada494c4420d3b8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Body_gloss
+    second: {fileID: 2800000, guid: 68e713f67a6161249a24c10452e8a748, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Body_normal
+    second: {fileID: 2800000, guid: 11e5b884cf3ba1d44b6fdabdc35af7c6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Body_specular
+    second: {fileID: 2800000, guid: 9294eaaa090cce941881cce57fe9df1b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Bottom_diffuse
+    second: {fileID: 2800000, guid: 398002ab64e05c34e963306502799c9d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Bottom_gloss
+    second: {fileID: 2800000, guid: 296ad2b5ab26bc7419e9e477136a2b08, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Bottom_normal
+    second: {fileID: 2800000, guid: 677edb6dedc82224cacfee8c204e23a5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Bottom_specular
+    second: {fileID: 2800000, guid: a3b24c298bf46204b94b32f211f8c3f4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Eyewear_diffuse
+    second: {fileID: 2800000, guid: 518eaf7c08d2a564b972f425c5d51350, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Eyewear_gloss
+    second: {fileID: 2800000, guid: 2f8fa9f7618e7164a87be62c09ba4e5a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Eyewear_normal
+    second: {fileID: 2800000, guid: 3d092a328f61ba64a93e9e5f1415e06a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Eyewear_specular
+    second: {fileID: 2800000, guid: c717468402269cf43963edf91421cf64, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Glove_diffuse
+    second: {fileID: 2800000, guid: c61c786718a6b7947ae8427f07ac43ba, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Glove_gloss
+    second: {fileID: 2800000, guid: 5d45577f36240e94d9c283d956a2403f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Glove_normal
+    second: {fileID: 2800000, guid: f6e65e599db8b184c809c62560027a9a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Glove_specular
+    second: {fileID: 2800000, guid: 5ab2929972092694c99f664b5886f951, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Hat_gloss
+    second: {fileID: 2800000, guid: 6dfe5c5d1d747904188766dbeab9b4bc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Hat_normal
+    second: {fileID: 2800000, guid: 45c2f23ddf18f514b92f8ab649e7c743, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Hat_specular
+    second: {fileID: 2800000, guid: 2e77b1a793a9f04419ba2cbdf7d9e762, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Mask_diffuse
+    second: {fileID: 2800000, guid: 33726d278e79ccb46b0ebf6716f2cbe5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Mask_gloss
+    second: {fileID: 2800000, guid: 57136e7d081eb8e4580d75da4bfcd5be, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Mask_normal
+    second: {fileID: 2800000, guid: e86084198d39dac4a9f3cd4e27784c97, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Mask_specular
+    second: {fileID: 2800000, guid: 4c98b5a414228ab4097a2f18d35cc3c8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Moustache_diffuse
+    second: {fileID: 2800000, guid: 74a427d4b62bbe048a708e6934c8a5e0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Moustache_gloss
+    second: {fileID: 2800000, guid: 07dbe1cd31c01bd4780987195aae6215, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Moustache_normal
+    second: {fileID: 2800000, guid: 9156352d8cc09704bb6b12c1a8fb0f8e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Moustache_specular
+    second: {fileID: 2800000, guid: 2cbb846f51cacc04085c9bbb43df1e2a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Shoes_diffuse
+    second: {fileID: 2800000, guid: 2cb613140a7ea33448f210f101693fee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Shoes_gloss
+    second: {fileID: 2800000, guid: 7ed46ab14bfe0a348b5abee961814355, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Shoes_normal
+    second: {fileID: 2800000, guid: b54ceadb16525ac479d94cfb29d470ec, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Shoes_specular
+    second: {fileID: 2800000, guid: a3144cc7850fc8546830dddb7b34f59b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Top_diffuse
+    second: {fileID: 2800000, guid: 63d250531afb0904489ba5b4dc1bb84d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Top_gloss
+    second: {fileID: 2800000, guid: 42cfaff629bea4147954eac3879273f8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Top_normal
+    second: {fileID: 2800000, guid: 77587921a3491b14f8e29498af4f3e64, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: OMNOM_Top_specular
+    second: {fileID: 2800000, guid: 5252e6385f475f847a9d80fbaf5fc1f3, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
