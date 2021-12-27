@@ -134,6 +134,12 @@ public class SpiderScript : MonoBehaviour{
     {
 		attackCoolDown = false;
     }
-	
 
+
+
+
+    private void OnTriggerExit(Collider colisor)
+    {
+        
+    }
 }

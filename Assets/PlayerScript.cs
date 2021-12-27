@@ -12,12 +12,18 @@ public class PlayerScript : MonoBehaviour
 	private Vector3 moveDirection;
 	public float gravity;
 	
-	public float hp;
+	public int hp;
+
+	public int maxHP = 100;
+
+	public HealthBarScript healthBar;
 
 	
     // Start is called before the first frame update
     void Start()
     {
+		hp = maxHP;
+		healthBar.SetMaxHealth(maxHP);
 		anim = GetComponent<Animator>(); 
 		controller = GetComponent<CharacterController>();
     }
@@ -66,8 +72,9 @@ public class PlayerScript : MonoBehaviour
 	}
 	
 	
-	public void RemoveHP(float damage){
+	public void RemoveHP(int damage){
 		hp -= damage;
+		healthBar.SetHealth(hp);
 	}
 
 	void OnTriggerEnter(Collider colisor)

@@ -65,8 +65,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\BubbleScript.cs" />
+    <Compile Include="Assets\DamageUI.cs" />
     <Compile Include="Assets\GameManager.cs" />
-    <Compile Include="Assets\HPBar.cs" />
+    <Compile Include="Assets\HealthBarScript.cs" />
     <Compile Include="Assets\PauseMenu.cs" />
     <Compile Include="Assets\PlayerScript.cs" />
     <Compile Include="Assets\SpawnSpider1.cs" />

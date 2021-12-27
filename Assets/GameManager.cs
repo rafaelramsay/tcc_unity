@@ -18,23 +18,23 @@ public class GameManager : MonoBehaviour
 
     public int xpRequired = 100;
 
-    public int playerHP = 100;
+    public int maxHP = 100;
 
-    private float hp;
+    //public float hp;
 
     public PlayerScript playerScript;
 
-    private void Start()
+    /*private void Start()
     {
         hp = playerScript.hp;
-    }
+    }*/
 
 
 
 
     private void Update()
     {
-        if(playerXP >= xpRequired)
+        if (playerXP >= xpRequired)
         {
             LevelUp();
         }
@@ -48,7 +48,8 @@ public class GameManager : MonoBehaviour
     private void LevelUp()
     {
         playerLvL += 1;
-        hp += 5;
+        maxHP += 5;
+        playerScript.hp = maxHP;
         playerXP -= xpRequired;
         xpRequired += 25;
         playerDamage += 5;

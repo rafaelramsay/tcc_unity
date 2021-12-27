@@ -1,25 +1,29 @@
 ﻿<Properties StartupConfiguration="{7A882426-787D-DCA5-5B08-6331B10C6A19}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GameManager.cs">
     <Files>
-      <File FileName="Assets/GameManager.cs" Line="29" Column="1" />
-      <File FileName="Assets/Spider Green/Scripts/SpiderScript.cs" Line="110" Column="42" />
-      <File FileName="Assets/PlayerScript.cs" Line="16" Column="1" />
-      <File FileName="Assets/HPBar.cs" Line="8" Column="29" />
-      <File FileName="Assets/SpawnSpider2.cs" Line="22" Column="55" />
-      <File FileName="Assets/SpawnSpider1.cs" Line="37" Column="55" />
-      <File FileName="Assets/PauseMenu.cs" Line="13" Column="1" />
+      <File FileName="Assets/GameManager.cs" Line="12" Column="1" />
+      <File FileName="Assets/Spider Green/Scripts/SpiderScript.cs" Line="39" Column="6" />
+      <File FileName="Assets/HealthBarScript.cs" Line="10" Column="1" />
+      <File FileName="Assets/DamageUI.cs" Line="17" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="TCC" expanded="True" selected="True" />
+          <Node name="TCC" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Spider Green" expanded="True">
+                <Node name="Scripts" expanded="True" />
+              </Node>
+              <Node name="GameManager.cs" selected="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1e966542-fe02-496d-8c7f-273865943108" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="50f7bfca-8e6b-4378-b272-898bfad8ef0b" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
