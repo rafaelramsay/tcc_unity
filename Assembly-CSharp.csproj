@@ -64,15 +64,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Battery.cs" />
+    <Compile Include="Assets\batteryUI.cs" />
+    <Compile Include="Assets\BossBarScript.cs" />
     <Compile Include="Assets\BubbleScript.cs" />
+    <Compile Include="Assets\ConfigureArena.cs" />
     <Compile Include="Assets\DamageUI.cs" />
+    <Compile Include="Assets\EatFruits.cs" />
+    <Compile Include="Assets\EnterComputer.cs" />
+    <Compile Include="Assets\ExitComputer.cs" />
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\HealthBarScript.cs" />
     <Compile Include="Assets\PauseMenu.cs" />
+    <Compile Include="Assets\PlaceBatteries.cs" />
     <Compile Include="Assets\PlayerScript.cs" />
     <Compile Include="Assets\SpawnSpider1.cs" />
     <Compile Include="Assets\SpawnSpider2.cs" />
     <Compile Include="Assets\Spider Green\Scripts\SpiderScript.cs" />
+    <Compile Include="Assets\TurnOnPortal.cs" />
+    <None Include="Assets\Toby Fredson\Rocky Hills Environment - Light Pack\Legacy Project\Legacy Project_Read Me!.txt" />
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>/Users/rafael/Supageeks/TCC/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
     </Reference>

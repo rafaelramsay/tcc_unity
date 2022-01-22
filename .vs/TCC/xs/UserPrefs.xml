@@ -1,29 +1,24 @@
 ﻿<Properties StartupConfiguration="{7A882426-787D-DCA5-5B08-6331B10C6A19}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/GameManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/EatFruits.cs">
     <Files>
-      <File FileName="Assets/GameManager.cs" Line="12" Column="1" />
-      <File FileName="Assets/Spider Green/Scripts/SpiderScript.cs" Line="39" Column="6" />
-      <File FileName="Assets/HealthBarScript.cs" Line="10" Column="1" />
-      <File FileName="Assets/DamageUI.cs" Line="17" Column="6" />
+      <File FileName="Assets/EatFruits.cs" Line="96" Column="17" />
+      <File FileName="Assets/HealthBarScript.cs" />
+      <File FileName="Assets/PlayerScript.cs" />
+      <File FileName="Assets/PauseMenu.cs" />
+      <File FileName="Assets/EnterComputer.cs" />
+      <File FileName="Assets/GameManager.cs" />
+      <File FileName="Assets/batteryUI.cs" />
+      <File FileName="Assets/Battery.cs" />
+      <File FileName="Assets/TurnOnPortal.cs" />
+      <File FileName="Assets/BossBarScript.cs" />
+      <File FileName="Assets/Spider Green/Scripts/SpiderScript.cs" Line="12" Column="19" />
+      <File FileName="Assets/ConfigureArena.cs" Line="30" Column="35" />
+      <File FileName="Assets/SpawnSpider1.cs" Line="16" Column="33" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="TCC" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Spider Green" expanded="True">
-                <Node name="Scripts" expanded="True" />
-              </Node>
-              <Node name="GameManager.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="50f7bfca-8e6b-4378-b272-898bfad8ef0b" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e8d6a395-4371-4907-b603-29c8cfd5acf9" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

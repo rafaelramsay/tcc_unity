@@ -24,10 +24,10 @@ public class GameManager : MonoBehaviour
 
     public PlayerScript playerScript;
 
-    /*private void Start()
+    private void Start()
     {
-        hp = playerScript.hp;
-    }*/
+        Cursor.visible = false;
+    }
 
 
 

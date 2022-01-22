@@ -9,6 +9,7 @@ public class SpiderScript : MonoBehaviour{
 	public Transform player;
 	Animation anim;
 	public GameObject battery;
+	public int maxHP;
 	
 	public float spiderSpeed = 4f;
 	
@@ -22,7 +23,7 @@ public class SpiderScript : MonoBehaviour{
 
 
 	//HP
-	public float HP = 100f;
+	public int hp = 100;
 
 	private bool isOnPlayerAttackRange = false;
 
@@ -41,10 +42,10 @@ public class SpiderScript : MonoBehaviour{
     // Update is called once per frame
     void Update()
     {
-        if (isOnPlayerAttackRange == true && HP > 0 && Input.GetButtonDown("AttackPunch") && attackCoolDown == false)
+        if (isOnPlayerAttackRange == true && hp > 0 && Input.GetButtonDown("AttackPunch") && attackCoolDown == false)
         {
 			Damage();
-        }else if(HP <= 0)
+        }else if(hp <= 0)
         {
 			Die();
         }
@@ -83,7 +84,7 @@ public class SpiderScript : MonoBehaviour{
 
 	void Damage()
     {
-		HP -= GameManager.Instance.playerDamage;
+		hp -= GameManager.Instance.playerDamage;
 		attackCoolDown = true;
     }
 
@@ -120,14 +121,11 @@ public class SpiderScript : MonoBehaviour{
 
 	void OnTriggerEnter(Collider colisor)
 	{
-		if (colisor.gameObject.tag == "Player" && HP > 0 && Input.GetButtonDown("AttackPunch"))
+		if (colisor.gameObject.tag == "Player")
 		{
 			isOnPlayerAttackRange = true;
-			Damage();
-		}else if(HP == 0)
-        {
-			Die();
-        }
+		
+		}
 	}
 
 	void AttackDelay()
@@ -138,8 +136,11 @@ public class SpiderScript : MonoBehaviour{
 
 
 
-    private void OnTriggerExit(Collider colisor)
-    {
-        
-    }
+	private void OnTriggerExit(Collider colisor)
+	{
+		if (colisor.gameObject.tag == "Player")
+		{
+			isOnPlayerAttackRange = false;
+		}
+	}
 }

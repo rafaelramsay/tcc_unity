@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
-    Animator anim;
+    public Animator anim;
 	public float velGiro;
 	
 	private CharacterController controller;
@@ -17,6 +17,10 @@ public class PlayerScript : MonoBehaviour
 	public int maxHP = 100;
 
 	public HealthBarScript healthBar;
+
+	public Transform spawnPos;
+
+	public int batteries;
 
 	
     // Start is called before the first frame update
@@ -44,6 +48,11 @@ public class PlayerScript : MonoBehaviour
 			anim.SetBool("Attacking", true);
 		}else {
 			anim.SetBool("Attacking", false);
+		}
+
+		if(hp <= 0)
+        {
+            Application.LoadLevel(0);
 		}
 	}
 		
