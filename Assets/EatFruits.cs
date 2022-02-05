@@ -25,7 +25,7 @@ public class EatFruits : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isPlayerOnBerryRange == true && Input.GetKeyDown(KeyCode.E) && berriesOnBush > 0)
+        if (isPlayerOnBerryRange == true && Input.GetKeyDown(KeyCode.E) && berriesOnBush > 0 && playerScript.hp < playerScript.maxHP)
         {
            
             playerScript.hp += 25;

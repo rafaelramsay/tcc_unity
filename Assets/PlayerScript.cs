@@ -54,6 +54,11 @@ public class PlayerScript : MonoBehaviour
         {
             Application.LoadLevel(0);
 		}
+        
+        if(hp > maxHP)
+        {
+            hp = maxHP;
+        }
 	}
 		
 	

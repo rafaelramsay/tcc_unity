@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossBarScript : MonoBehaviour
 {
-
+    public GameObject bossBar;
     public HealthBarScript healthBar;
     public SpiderScript spiderScript;
 
@@ -21,6 +21,10 @@ public class BossBarScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(hp < 1)
+        {
+            bossBar.SetActive(false);
+        }
         maxHP = spiderScript.maxHP;
         hp = spiderScript.hp;
         healthBar.SetHealth(hp);
