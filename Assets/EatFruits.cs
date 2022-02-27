@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EatFruits : MonoBehaviour
 {
@@ -11,20 +12,52 @@ public class EatFruits : MonoBehaviour
     public GameObject berry4;
     public PlayerScript playerScript;
     public GameObject eatBerriesText;
+    public GameObject berryText;
 
     public bool isPlayerOnBerryRange;
     public int maxBerries = 4;
     public int berriesOnBush = 4;
 
+    public Text berryTextText;
+
     // Start is called before the first frame update
     void Start()
     {
+        berryTextText = berryText.GetComponent<Text>();
         StartCoroutine(RespawnBerryTimer());
     }
 
     // Update is called once per frame
     void Update()
     {
+
+
+        if (isPlayerOnBerryRange == true && Input.GetKeyDown(KeyCode.F) && berriesOnBush > 0)
+        {
+            playerScript.berries += 1;
+            berriesOnBush -= 1;
+
+            if (berry1.active == true)
+            {
+                berry1.SetActive(false);
+            }
+            else if (berry2.active == true)
+            {
+                berry2.SetActive(false);
+            }
+            else if (berry3.active == true)
+            {
+                berry3.SetActive(false);
+            }
+            else if (berry4.active == true)
+            {
+                berry4.SetActive(false);
+            }
+        }
+
+
+        berryTextText.text = playerScript.berries.ToString();
+
         if (isPlayerOnBerryRange == true && Input.GetKeyDown(KeyCode.E) && berriesOnBush > 0 && playerScript.hp < playerScript.maxHP)
         {
            
@@ -84,6 +117,11 @@ public class EatFruits : MonoBehaviour
             berry4.SetActive(true);
             berriesOnBush += 1;
         }
+
+
+
+
+        
 
     }
     IEnumerator RespawnBerryTimer()

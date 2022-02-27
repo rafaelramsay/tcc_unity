@@ -10,6 +10,10 @@ TagManager:
   - spider1
   - spider2
   - spiderBoss
+  - Meat
+  - HungrySpider
+  - hungryIcon
+  - LoveIcon
   layers:
   - Default
   - TransparentFX

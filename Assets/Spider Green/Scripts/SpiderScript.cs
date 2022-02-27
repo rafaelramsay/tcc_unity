@@ -5,8 +5,10 @@ using UnityEngine;
 public class SpiderScript : MonoBehaviour{
 	
 	public float maxRange = 30f;
-	private float currentRange;
-	public Transform player;
+    public float maxEatRange = 2.5f;
+    private float currentRange;
+    private float currentFoodRange;
+    public Transform player;
 	Animation anim;
 	public GameObject battery;
 	public int maxHP;
@@ -29,19 +31,38 @@ public class SpiderScript : MonoBehaviour{
 
 	private bool attackCoolDown = false;
 
+    public GameObject meat;
 
-	// Start is called before the first frame update
-	void Start()
+    public PlayerScript playerScript;
+    public GameObject hungryIcon;
+    public GameObject loveIcon;
+    public bool isTamed;
+    
+   
+
+
+
+    // Start is called before the first frame update
+    void Start()
     {
         anim = GetComponent<Animation>();
 		areaAttack = GetComponent<BoxCollider>();
 		
 		player = GameObject.FindGameObjectWithTag("Player").transform;
+        
+
+        playerScript = player.GetComponent<PlayerScript>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(GameManager.Instance.isMeatActive == true)
+        {
+            meat = GameObject.FindGameObjectWithTag("Meat");
+        }
+        
+
         if (isOnPlayerAttackRange == true && hp > 0 && Input.GetButtonDown("AttackPunch") && attackCoolDown == false)
         {
 			Damage();
@@ -54,15 +75,41 @@ public class SpiderScript : MonoBehaviour{
         {
             Invoke(nameof(AttackDelay), 3.833f);
         }
+        if (gameObject.CompareTag("HungrySpider"))
+        {
+            
+            
+           if(currentRange >= maxRange && !anim.IsPlaying("Death") && GameManager.Instance.isMeatActive == true)
+            {
+                anim.Play("Walk");
+                transform.LookAt(meat.transform);
+                transform.position += transform.forward * spiderSpeed * Time.deltaTime;
+                if(currentFoodRange <= maxEatRange)
+                {
+                    loveIcon.SetActive(true);
+                    hungryIcon.SetActive(false);
+                    meat.SetActive(false);
+                    isTamed = true;
+                    GameManager.Instance.isMeatActive = false;
+                    GameManager.Instance.spiderImage.SetActive(true);
+                }
+            }
+        }
 		
 
 		attacking = anim.IsPlaying("Attack");
 		areaAttack.enabled = anim.IsPlaying("Attack");
 		
-	   currentRange = Vector3.Distance(transform.position, player.transform.position);
-	   
-	   
-	   if(currentRange <= attackRange){
+	    currentRange = Vector3.Distance(transform.position, player.transform.position);
+
+        if(GameManager.Instance.isMeatActive == true)
+        {
+            currentFoodRange = Vector3.Distance(transform.position, meat.transform.position);
+        }
+        
+
+
+        if (currentRange <= attackRange && isTamed == false){
 		   Attack();
 	   }
 	   
@@ -101,16 +148,19 @@ public class SpiderScript : MonoBehaviour{
             {
 				GameManager.Instance.spiders1OnGame -= 1;
 				GameManager.Instance.playerXP += 10;
+                playerScript.meat += 3;
 			} else if (this.gameObject.CompareTag("spider2"))
 			{
 				GameManager.Instance.spiders2OnGame -= 1;
 				GameManager.Instance.playerXP += 35;
-			}
+                playerScript.meat += 7;
+            }
 			else if (this.gameObject.CompareTag("spiderBoss"))
 			{
 				GameManager.Instance.playerXP += 7500;
 				battery.SetActive(true);
-			}
+                playerScript.meat += 135;
+            }
 			Destroy(gameObject);
         } 
 
@@ -126,7 +176,7 @@ public class SpiderScript : MonoBehaviour{
 			isOnPlayerAttackRange = true;
 		
 		}
-	}
+    }
 
 	void AttackDelay()
     {
@@ -143,4 +193,7 @@ public class SpiderScript : MonoBehaviour{
 			isOnPlayerAttackRange = false;
 		}
 	}
+
+
+    
 }

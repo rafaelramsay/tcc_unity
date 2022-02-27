@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
     public Animator anim;
 	public float velGiro;
+
+    
 	
 	private CharacterController controller;
 	public float speed;
@@ -22,6 +25,15 @@ public class PlayerScript : MonoBehaviour
 
 	public int batteries;
 
+    public int berries = 0;
+    public int meat = 0;
+
+    public GameManager gameManager;
+
+    public Text meatText;
+
+    public GameObject meatObj;
+
 	
     // Start is called before the first frame update
     void Start()
@@ -33,33 +45,46 @@ public class PlayerScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update() 
-	{
+    void Update()
+    {
+        meatText.text = meat.ToString();
+        maxHP = gameManager.maxHP;
+        anim.SetFloat("Speed", Input.GetAxis("Vertical"));
+        transform.Rotate(new Vector3(0, Input.GetAxis("Horizontal") * velGiro * Time.deltaTime, 0));
+        Move();
 
-		anim.SetFloat("Speed", Input.GetAxis("Vertical"));
-		transform.Rotate(new Vector3(0, Input.GetAxis("Horizontal") * velGiro * Time.deltaTime, 0));
-		Move();
-		
-		if(Input.GetButtonDown("Jump")){
-			anim.SetBool("Jumping", true);
-			Invoke("StopJump", 0.1f);
-		}
-		if(Input.GetButtonDown("AttackPunch")){
-			anim.SetBool("Attacking", true);
-		}else {
-			anim.SetBool("Attacking", false);
-		}
+        if (Input.GetButtonDown("Jump"))
+        {
+            anim.SetBool("Jumping", true);
+            Invoke("StopJump", 0.1f);
+        }
+        if (Input.GetButtonDown("AttackPunch"))
+        {
+            anim.SetBool("Attacking", true);
+        }
+        else
+        {
+            anim.SetBool("Attacking", false);
+        }
 
-		if(hp <= 0)
+        if (hp <= 0)
         {
             Application.LoadLevel(0);
-		}
-        
-        if(hp > maxHP)
+        }
+
+        if (hp > maxHP)
         {
             hp = maxHP;
         }
-	}
+
+        if (Input.GetKeyDown(KeyCode.L) && meat > 0)
+        {
+            GameManager.Instance.isMeatActive = true;
+            meat -= 1;
+            meatObj.SetActive(true);
+            meatObj.transform.position = gameObject.transform.position;
+        }
+    }
 		
 	
 	void StopJump(){
@@ -86,7 +111,8 @@ public class PlayerScript : MonoBehaviour
 	}
 	
 	
-	public void RemoveHP(int damage){
+	public void RemoveHP(int damage)
+    {
 		hp -= damage;
 		healthBar.SetHealth(hp);
 	}
@@ -103,8 +129,11 @@ public class PlayerScript : MonoBehaviour
 		}else if (colisor.gameObject.tag == "spiderBoss")
 		{
 			RemoveHP(50);
-		}
-		
+		}else if (colisor.gameObject.tag == "HungrySpider")
+        {
+            RemoveHP(10);
+        }
 
-	}
+
+    }
 }

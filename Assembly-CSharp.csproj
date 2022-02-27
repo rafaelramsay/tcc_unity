@@ -66,6 +66,7 @@
     <Compile Include="Assets\BubbleScript.cs" />
     <Compile Include="Assets\ConfigureArena.cs" />
     <Compile Include="Assets\DamageUI.cs" />
+    <Compile Include="Assets\Diglet.cs" />
     <Compile Include="Assets\EatFruits.cs" />
     <Compile Include="Assets\EndGame.cs" />
     <Compile Include="Assets\EnterComputer.cs" />
@@ -87,7 +88,6 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\Toby Fredson\Rocky Hills Environment - Light Pack\Legacy Project\Legacy Project_Read Me!.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />

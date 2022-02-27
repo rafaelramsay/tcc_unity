@@ -20,6 +20,16 @@ public class GameManager : MonoBehaviour
 
     public int maxHP = 100;
 
+    public GameObject playerMenu;
+
+    public GameObject things;
+
+    public bool isMeatActive = false;
+
+    public GameObject spiderImage;
+
+
+
     //public float hp;
 
     public PlayerScript playerScript;
@@ -32,11 +42,21 @@ public class GameManager : MonoBehaviour
 
 
 
-    private void Update()
+    void Update()
     {
         if (playerXP >= xpRequired)
         {
             LevelUp();
+        }
+
+        if (playerMenu.active == false && Input.GetButtonDown("OpenMenu"))
+        {
+            playerMenu.SetActive(true);
+            things.SetActive(false);
+        }else if(playerMenu.active == true && Input.GetButtonDown("OpenMenu"))
+        {
+            playerMenu.SetActive(false);
+            things.SetActive(true);
         }
     }
 
